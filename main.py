@@ -6,6 +6,8 @@ import os
 from train import Train
 from face_recognition import Face_Recognition
 from attendance import Attendance
+from helpdesk import Helpdesk
+from developer import Developer
 
 class FaceRecognitionSystem:
     def __init__(self, root):
@@ -70,16 +72,16 @@ class FaceRecognitionSystem:
         img7 = img7.resize((220, 220), Image.LANCZOS)
         self.photoimg7 = ImageTk.PhotoImage(img7)
 
-        b1=Button(bg_img,image=self.photoimg7,cursor="hand2")
+        b1=Button(bg_img,image=self.photoimg7,cursor="hand2",command=self.helpdesk)
         b1.place(x=1100,y=100,width=220,height=220)
 
-        b1_1=Button(bg_img,text="Help Desk",cursor="hand2",font=("times new roman",15,"bold"),bg="darkblue",fg="red")
+        b1_1=Button(bg_img,text="Help Desk",cursor="hand2",command=self.helpdesk,font=("times new roman",15,"bold"),bg="darkblue",fg="red")
         b1_1.place(x=1100, y=300, width=220, height=40)
 
 
          #train_face_button
        
-        img8 = Image.open(r"C:\Users\Abdul Raqeeb\OneDrive\Desktop\mini project\mini project - Copy\images\train_data")
+        img8 = Image.open(r"C:\Users\Abdul Raqeeb\OneDrive\Desktop\mini project\mini project - Copy\images\train final.jpeg")
         img8 = img8.resize((220, 220), Image.LANCZOS)
         self.photoimg8 = ImageTk.PhotoImage(img8)
 
@@ -93,7 +95,7 @@ class FaceRecognitionSystem:
 
          #photos button"C:\Users\Abdul Raqeeb\OneDrive\Desktop\mini project\images\pic4.jpg"
        
-        img9 = Image.open(r"C:\Users\Abdul Raqeeb\OneDrive\Desktop\mini project\mini project - Copy\images\photose")
+        img9 = Image.open(r"C:\Users\Abdul Raqeeb\OneDrive\Desktop\mini project\mini project - Copy\images\photo logo.jpeg")
         img9 = img9.resize((220, 220), Image.LANCZOS)
         self.photoimg9 = ImageTk.PhotoImage(img9)
 
@@ -106,14 +108,14 @@ class FaceRecognitionSystem:
 
          #developer
        
-        img10 = Image.open(r"C:\Users\Abdul Raqeeb\OneDrive\Desktop\mini project\mini project - Copy\images\dev")
+        img10 = Image.open(r"C:\Users\Abdul Raqeeb\OneDrive\Desktop\mini project\mini project - Copy\images\bug pic.jpg")
         img10 = img10.resize((220, 220), Image.LANCZOS)
         self.photoimg10 = ImageTk.PhotoImage(img10)
 
-        b1=Button(bg_img,image=self.photoimg10,cursor="hand2")
+        b1=Button(bg_img,image=self.photoimg10,cursor="hand2",command=self.developer)
         b1.place(x=800,y=400,width=220,height=220)
 
-        b1_1=Button(bg_img,text="Developer",cursor="hand2",font=("times new roman",15,"bold"),bg="darkblue",fg="red")
+        b1_1=Button(bg_img,text="Developer",cursor="hand2",command=self.developer,font=("times new roman",15,"bold"),bg="darkblue",fg="red")
         b1_1.place(x=800, y=400, width=220, height=40)
 
          #exit
@@ -146,6 +148,12 @@ class FaceRecognitionSystem:
     def attendance_data(self):
         self.new_window=Toplevel(self.root)
         self.app=Attendance(self.new_window)
+    def helpdesk(self):
+        self.new_window=Toplevel(self.root)
+        self.app=Helpdesk(self.new_window)
+    def developer(self):
+        self.new_window=Toplevel(self.root)
+        self.app=Developer(self.new_window)
 
     def Close(self):
         root.destroy()
