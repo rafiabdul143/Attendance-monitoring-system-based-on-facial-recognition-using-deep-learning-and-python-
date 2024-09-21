@@ -75,7 +75,7 @@ class Developer:
             'Instagram': 'https://www.instagram.com/abdul_rafi143/profilecard/?igsh=MWJsZ2ZmOG04aWx3NA==',
             'LinkedIn': 'https://www.linkedin.com/in/yourusername',
             'Gmail': 'mailto:mohdadbulrafi17@gmail.com',
-            'GitHub': 'https://github.com/rafiabdul143/attendance-monitoring-system-using-face-recognition',
+            'GitHub': 'https://github.com/rafiabdul143/Attendance-monitoring-system-based-on-facial-recognition-using-deep-learning-and-python-',
             'Credly': 'https://www.credly.com/users/abdul-rafi.6d3fc463/edit'
         }
         
