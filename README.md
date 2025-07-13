@@ -1,4 +1,4 @@
-# Attendance-monitoring-system-based-on-facial-recognition-using-deep-learning-and-python
+# Attendance-monitoring-system-based-on-facial-recognition-using-deep-learning-and-python 
 
 
 The **Attendance Monitoring System** based on facial recognition using deep learning and Python employs both deep learning techniques and traditional machine learning models to ensure accurate, real-time attendance tracking. One of the key components utilized in this project is the **Haar Cascade Classifier**, which is a machine learning-based approach used for detecting objects in images or video streams, specifically faces in this case. Here's how the system integrates these components:
