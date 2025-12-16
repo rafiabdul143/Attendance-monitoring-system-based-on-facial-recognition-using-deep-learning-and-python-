@@ -1,4 +1,4 @@
-from tkinter import *
+from tkinter import * 
 from tkinter import ttk, filedialog, messagebox
 from PIL import Image, ImageTk
 import csv
