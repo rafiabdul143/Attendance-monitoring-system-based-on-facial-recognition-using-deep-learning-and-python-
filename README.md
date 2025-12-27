@@ -12,7 +12,7 @@ The **Attendance Monitoring System** based on facial recognition using deep lear
 - After detecting the face using the Haar Cascade Classifier, the **deep learning** model takes over for **face recognition**.
 - The system utilizes a **Convolutional Neural Network (CNN)**-based face recognition model, such as the one provided by the **face_recognition** library. This deep learning model extracts facial embeddings and compares them with stored data to identify individuals.
 - The **face_recognition** library uses deep neural networks (DNNs) trained on a large dataset to map a person’s face to a unique vector (known as an embedding), allowing for accurate matching even under varied lighting conditions or angles.
-
+ 
 ### Python Libraries Involved:
 - **OpenCV (cv2)**: Used for both image processing tasks and implementing the **Haar Cascade Classifier** for face detection.
 - **face_recognition**: A deep learning-based library that handles the task of identifying faces after detection.
